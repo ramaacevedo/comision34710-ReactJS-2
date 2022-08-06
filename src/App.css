@@ -45,5 +45,10 @@
 
 .carritoCompras{
   text-align: center;
-  margin: 100px;
+  margin: 15px;
+}
+
+.allProducts{
+  border-radius: 10px;
+  border: black;
 }

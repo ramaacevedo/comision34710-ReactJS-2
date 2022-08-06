@@ -4,36 +4,43 @@ import Item from './Item';
 import ItemList from './ItemList';
 
 
-function getProducts(){
-    return new Promise( (resolve) =>{
-        setTimeout( () => resolve(Item), 2000);
+
+async function getProducts() {
+    return new Promise((resolve) => {
+        setTimeout(() => resolve(Item), 2000);
     })
 };
 
-function ItemListContainer(props){
+function ItemListContainer(props) {
     const [data, setData] = useState([]);
 
-    useEffect( () => {
-        getProducts().then( (resp) =>{
+    useEffect(() => {
+        getProducts().then((resp) => {
             setData(resp);
         });
     }, []);
-    
-    return(
+
+return (
     <>
     <h1 className="h1"> {props.greeting} </h1>
-    <div>
-        <ItemList 
-            key={data.id}
-            name={data.name}
-            price={data.price}
-            imgurl={data.imgurl}
-            stock={data.stock}
-        />
+    <div className="d-flex justify-content-around">
+        {data.map((item) => {
+            return (
+                <ItemList
+                key={item.id}
+                name={item.name}
+                price={item.price}
+                imgurl={item.imgurl}
+                stock={item.stock}
+                carrito={item.carrito}
+                />
+                );
+                
+            })}
     </div>
     </>
-    )
-}
+);
+};
 
 
 export default ItemListContainer;
