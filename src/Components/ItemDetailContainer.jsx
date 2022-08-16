@@ -1,18 +1,20 @@
 import '../App.css'
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Item from './Item';
 import ItemDetail from './ItemDetail';
 
 
+function ItemDetailContainer() {
+    const [data, setData] = useState([]);
+    const id = useParams().id;
 
-async function getProducts() {
+
+function getProducts() {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(Item[0]), 2000);
+        setTimeout(() => resolve(Item[id]));
     })
 };
-
-function ItemListContainer(props) {
-    const [data, setData] = useState([]);
 
     useEffect(() => {
         getProducts().then((resp) => {
@@ -22,14 +24,13 @@ function ItemListContainer(props) {
 
 return (
     <>
-    <h1 className="h1"> {props.greeting} </h1>
     <div className="d-flex justify-content-around">
             <ItemDetail
-                key={data.id}
                 name={data.name}
                 price={data.price}
                 imgurl={data.imgurl}
                 stock={data.stock}
+                category={data.category}
                 carrito={data.carrito}
             />
     </div>
@@ -38,4 +39,5 @@ return (
 };
 
 
-export default ItemListContainer;
+
+export default ItemDetailContainer;

@@ -1,37 +1,45 @@
-import '../App.css'
+import '../App.css';
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Item from './Item';
 import ItemList from './ItemList';
 
 
+function ItemListContainer() {
+    const [data, setData] = useState([]);
+    const category = useParams().category;
 
-async function getProducts() {
+
+function getProducts() {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(Item), 2000);
+        setTimeout(() => resolve(Item));
     })
 };
 
-function ItemListContainer(props) {
-    const [data, setData] = useState([]);
-
     useEffect(() => {
-        getProducts().then((resp) => {
-            setData(resp);
+        getProducts().then(resp => {
+            let filtro = Item.filter ( (producto) => producto.category === category )
+            if (category === undefined){
+                setData(resp);
+            }else{
+                setData(filtro);
+            }
         });
-    }, []);
+    }, [category]);
 
 return (
     <>
-    <h1 className="h1"> {props.greeting} </h1>
     <div className="d-flex justify-content-around">
         {data.map((item) => {
             return (
                 <ItemList
                 key={item.id}
+                id={item.id}
                 name={item.name}
                 price={item.price}
                 imgurl={item.imgurl}
                 stock={item.stock}
+                category={item.category}
                 carrito={item.carrito}
                 />
                 );

@@ -1,26 +1,27 @@
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 function NavBar(){
     return(
     <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-            <a className="navbar-brand" href="#">L O G O</a>
+            <Link className="navbar-brand" to="/">L O G O</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+                <Link className="nav-link active" aria-current="page" to="/">Inicio</Link>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link active" href="#">Productos</a>
+                <Link className="nav-link active" to={`category/para-1-persona`}>Comida para 1 persona</Link>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link active" href="#">Quienes somos</a>
+                <Link className="nav-link active" to={`category/para-2-personas`}>Comida para 2 personas</Link>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link active" href="#">Contacto</a>
+                <Link className="nav-link active" to={`category/para-3-personas`}>Comida para 3 personas</Link>
                 </li>
             </ul>
             <CartWidget />

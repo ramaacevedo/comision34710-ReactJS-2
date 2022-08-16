@@ -1,10 +1,7 @@
-import Item from './Item';
-import ItemCount from './ItemCount';
 
-function ItemDetail({id, name, price, imgurl, stock, carrito}){
+function ItemDetail({ name, price, imgurl, stock, carrito}){
     return(
         <div> 
-            <p>{id}</p>
             <img src={imgurl} alt="imagen" />
             <h2>{name}</h2>
             <h4>Precio: $ {price}</h4>
