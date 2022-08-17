@@ -25,9 +25,9 @@ function ItemCount(props){
         setBotonRestaActivo(true);
     }
 
-    function onAdd (){
+    function handleClicks (){
+        props.onAdd(Clicks);
         setClicks(1);
-        alert(`${Clicks} elementos agregados al carrito`)
     }
 
     return(
@@ -38,7 +38,7 @@ function ItemCount(props){
         <button type="button" className="btn btn-outline-info m-1" onClick={ resetConunter }> Reset </button>
         </div>
         <div className="">
-        <button type="button" className="btn btn-outline-primary m-1" onClick={ onAdd }> Agregar al carrito </button>
+        <button type="button" className="btn btn-outline-primary m-1" onClick={ handleClicks }> Agregar al carrito </button>
         <button type="button" className="btn btn-outline-primary m-1"><i className="bi bi-cart4 me-1"></i><span className="badge bg-light text-primary">{Clicks}</span></button>
         </div>
         </div>
