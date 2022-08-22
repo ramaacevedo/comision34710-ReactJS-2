@@ -24,7 +24,6 @@ function CartView({foodAdd, id}){
                             />)
                     }
                     <button onClick={() => clearCart([])}>Vaciar carrito</button>
-                    <p>{totalPrice}</p>
                         </>
             )}
             </>
