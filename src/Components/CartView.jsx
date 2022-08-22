@@ -34,7 +34,6 @@ function CartView(id){
                         )
                     })}
                     {
-
                     }
                     <button onClick={() => clearCart([])}>Vaciar carrito</button>
                         </>

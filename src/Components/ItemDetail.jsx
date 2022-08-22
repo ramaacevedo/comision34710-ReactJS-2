@@ -11,8 +11,8 @@ function ItemDetail({id, name, price, imgurl, stock}){
     const {addItem} = useContext(userContext);
 
     function handelAdd(quantity){
-        setQuantityToAdd (quantityToAdd + 1);
         addItem({id, name, price, imgurl}, quantity)
+        setQuantityToAdd (quantity);
     }
 
     return(
