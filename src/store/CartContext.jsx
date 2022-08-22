@@ -28,12 +28,18 @@ export function CartContext({children}){
         cart.reduce((prev, act) => prev + act.quantity * act.precio, 0 );
     };
 
+    function totalQuantity() {
+        let quantityItem = 0;
+        cart.map(item => quantityItem += item.quantity);
+        return quantityItem;
+    }
+
     function clearCart(){
         setCart([]);
     };
 
     return(
-    <userContext.Provider value={{cart, addItem, isInCart, removeItem, totalPrice, clearCart}}>
+    <userContext.Provider value={{cart, addItem, isInCart, removeItem, totalPrice, totalQuantity, clearCart}}>
     {children}
     </userContext.Provider>
     )

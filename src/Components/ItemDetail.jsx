@@ -12,8 +12,7 @@ function ItemDetail({id, name, price, imgurl, stock}){
 
     function handelAdd(quantity){
         setQuantityToAdd (quantityToAdd + 1);
-        const itemToCart = {id, name, price, imgurl};
-        addItem(itemToCart, quantity)
+        addItem({id, name, price, imgurl}, quantity)
     }
 
     return(
