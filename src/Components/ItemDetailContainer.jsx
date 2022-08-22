@@ -26,6 +26,8 @@ return (
     <>
     <div className="d-flex justify-content-around">
             <ItemDetail
+                key={data.id}
+                id={data.id}
                 name={data.name}
                 price={data.price}
                 imgurl={data.imgurl}

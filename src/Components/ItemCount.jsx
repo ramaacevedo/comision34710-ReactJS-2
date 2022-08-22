@@ -1,22 +1,24 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 
 function ItemCount(props){
 
-    const[Clicks, setClicks] = useState(1);
+    const[clicks, setClicks] = useState(1);
+
+
     const[botonSumaActivo, setBotonSumaActivo] = useState(false);
     const[botonRestaActivo, setBotonRestaActivo] = useState(false);
     
     function handleIncrement(){
-        setClicks(Clicks + 1);
+        setClicks(clicks + 1);
         setBotonRestaActivo(false)
-        {Clicks < props.stock - 1 ? console.log('Agregado al carrito') : setBotonSumaActivo(true)} 
+        {clicks < props.stock - 1 ? console.log('Agregado al carrito') : setBotonSumaActivo(true)} 
 }
     
     function handleDecrement(){
-        setClicks(Clicks - 1)
+        setClicks(clicks - 1)
         setBotonSumaActivo(false)
-        {Clicks > props.initial + 1 ? console.log('Quitado del carrito') : setBotonRestaActivo(true)}
+        {clicks > props.initial + 1 ? console.log('Quitado del carrito') : setBotonRestaActivo(true)}
     }
 
     function resetConunter(){
@@ -26,8 +28,7 @@ function ItemCount(props){
     }
 
     function handleClicks (){
-        props.onAdd(Clicks);
-        setClicks(1);
+        props.onAdd(clicks);
     }
 
     return(
@@ -39,7 +40,7 @@ function ItemCount(props){
         </div>
         <div className="">
         <button type="button" className="btn btn-outline-primary m-1" onClick={ handleClicks }> Agregar al carrito </button>
-        <button type="button" className="btn btn-outline-primary m-1"><i className="bi bi-cart4 me-1"></i><span className="badge bg-light text-primary">{Clicks}</span></button>
+        <button type="button" className="btn btn-outline-primary m-1"><i className="bi bi-cart4 me-1"></i><span className="badge bg-light text-primary">{clicks}</span></button>
         </div>
         </div>
     )
