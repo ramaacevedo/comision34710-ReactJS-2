@@ -5,7 +5,6 @@ function ItemCount(props){
 
     const[clicks, setClicks] = useState(1);
 
-
     const[botonSumaActivo, setBotonSumaActivo] = useState(false);
     const[botonRestaActivo, setBotonRestaActivo] = useState(false);
     

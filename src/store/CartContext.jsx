@@ -22,7 +22,7 @@ export function CartContext({children}){
     };
 
     function totalPrice (){
-        cart.reduce((prev, act) => prev + act.quantity * act.precio, 0 );
+        cart.reduce((prev, act) => prev + act.quantity * act.price, 0 );
     };
 
     function totalQuantity() {

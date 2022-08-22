@@ -23,7 +23,7 @@ function ItemDetail({id, name, price, imgurl, stock}){
             <h5>Stock: {stock}</h5>
 
             {quantityToAdd === 1 ?
-            <ItemCount stock={10} initial={1} onAdd={handelAdd} />
+            <ItemCount stock={stock} initial={1} onAdd={handelAdd} />
             : <NavLink style={(isActive) => isActive ? {textDecoration: 'none'} : undefined} className="btn btn-outline-info m-1" to='/cart'  >Ir al carrito</NavLink>
             }
             <hr />

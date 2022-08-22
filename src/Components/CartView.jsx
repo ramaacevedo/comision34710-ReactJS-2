@@ -33,8 +33,7 @@ function CartView(id){
                         />
                         )
                     })}
-                    {
-                    }
+                    <p>{totalPrice}</p>
                     <button onClick={() => clearCart([])}>Vaciar carrito</button>
                         </>
             )}
