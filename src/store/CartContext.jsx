@@ -21,8 +21,10 @@ export function CartContext({children}){
         cart.some(foodAdd => foodAdd.id === id);
     };
 
-    function totalPrice (){
-        cart.reduce((prev, act) => prev + act.quantity * act.price, 0 );
+    function totalPrice(){
+        let total = 0;
+        cart.map((item) => total += item.price * item.quantity);
+        return total;
     };
 
     function totalQuantity() {
@@ -42,7 +44,7 @@ export function CartContext({children}){
     };
 
     return(
-    <userContext.Provider value={{cart, addItem, isInCart, removeItem, totalPrice, totalQuantity, clearCart}}>
+    <userContext.Provider value={{cart, addItem, isInCart, totalPrice, totalQuantity, removeItem, clearCart}}>
     {children}
     </userContext.Provider>
     )

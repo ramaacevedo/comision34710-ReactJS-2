@@ -33,7 +33,8 @@ function CartView(id){
                         />
                         )
                     })}
-                    <p>{totalPrice}</p>
+                    <p>Subtotal: ${totalPrice()}</p>
+                    <p>Total: ${totalPrice() * 1.21}</p>
                     <button onClick={() => clearCart([])}>Vaciar carrito</button>
                         </>
             )}
