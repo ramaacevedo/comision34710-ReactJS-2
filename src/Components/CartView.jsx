@@ -10,7 +10,6 @@ function CartView(id){
     function removeItemCart() {
         removeItem(id)
     }
-
     return(
         <>
         { cart.length === 0 ? ( 
@@ -24,7 +23,7 @@ function CartView(id){
                     {cart.map((item) => {
                         return (
                             <CartItems
-                            key={item.id + item.name}
+                            key={item.id}
                             img={item.imgurl}
                             name={item.name}
                             price={item.price}
