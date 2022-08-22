@@ -27,7 +27,7 @@ function CartView(id){
                             key={item.id + item.name}
                             img={item.imgurl}
                             name={item.name}
-                            price={item.price * item.quantity}
+                            price={item.price}
                             quantity={item.quantity}
                             removeItemCart={removeItemCart}
                         />
