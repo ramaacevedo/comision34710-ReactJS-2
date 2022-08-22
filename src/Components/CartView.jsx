@@ -7,10 +7,6 @@ function CartView({foodAdd, id}){
 
     const {cart, clearCart, removeItem, totalPrice} = useContext(userContext);
 
-    function removee(id){
-        removeItem(id);
-    }
-
     return(
         <>
         { cart.length === 0 ? ( 
@@ -25,8 +21,6 @@ function CartView({foodAdd, id}){
                         cart.map(foodAdd => <CartItems 
                             id={foodAdd.id} 
                             foodAdd={foodAdd}
-                            totalPrice={totalPrice}
-                            removee={removee}
                             />)
                     }
                     <button onClick={() => clearCart([])}>Vaciar carrito</button>
