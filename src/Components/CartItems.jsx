@@ -1,5 +1,4 @@
 import React from 'react'
-import useContext, {userContext} from "../store/CartContext";
 
 const CartItems = ({id, name, price, imgurl, quantity, removeItemCart}) => {
 

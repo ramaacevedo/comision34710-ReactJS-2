@@ -11,20 +11,20 @@ function ItemCount(props){
     
     function handleIncrement(){
         setClicks(clicks + 1);
-        setBotonRestaActivo(false)
+        setBotonRestaActivo(true)
         {clicks < props.stock - 1 ? console.log('Agregado al carrito') : setBotonSumaActivo(true)} 
 }
     
     function handleDecrement(){
         setClicks(clicks - 1)
         setBotonSumaActivo(false)
-        {clicks > props.initial + 1 ? console.log('Quitado del carrito') : setBotonRestaActivo(true)}
+        {clicks > props.initial + 1 ? console.log('Quitado del carrito') : setBotonRestaActivo(false)}
     }
 
     function resetConunter(){
         setClicks(1);
         setBotonSumaActivo(false);
-        setBotonRestaActivo(true);
+        setBotonRestaActivo(false);
     }
 
     function handleClicks (){
@@ -35,7 +35,7 @@ function ItemCount(props){
         <div className="carritoCompras justify-content-center">
         <div className="botonesSumarRestar">
         <button disabled={botonSumaActivo} type="button" className="btn btn-outline-info m-1" onClick={ handleIncrement }> + </button>
-        <button disabled={botonRestaActivo} type="button" className="btn btn-outline-info m-1" onClick={ handleDecrement }> - </button>
+        <button disabled={!botonRestaActivo} type="button" className="btn btn-outline-info m-1" onClick={ handleDecrement }> - </button>
         <button type="button" className="btn btn-outline-info m-1" onClick={ resetConunter }> Reset </button>
         </div>
         <div className="">
