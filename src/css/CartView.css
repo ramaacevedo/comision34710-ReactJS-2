@@ -1,0 +1,23 @@
+.noHayPedidos{
+    text-align: center;
+    margin: 50px;
+}
+
+.CartView{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 40px;
+}
+
+.ItemDetailContainer:hover{
+    box-shadow: 0px 4px 12px 2px rgba(0,0,0,0.25);
+    transform: translateY(-6px);
+}
+
+.precioTotal{
+    background-color: rgb(230, 228, 228);
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+}

@@ -12,6 +12,7 @@ export function CartContext({children}){
             setCart(cart.map(foodAdd => {
             return foodAdd.id === item.id ? {...foodAdd, quantity: foodAdd.quantity + quantity} : foodAdd 
         }));
+
     } else {
         setCart([...cart, {...item, quantity: quantity}])
     }

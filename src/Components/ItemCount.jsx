@@ -1,23 +1,28 @@
 import React, { useState } from 'react';
 
 
-function ItemCount(props){
+function ItemCount({ stock, initial, onAdd }){
 
-    const[clicks, setClicks] = useState(1);
-
+    const[clicks, setClicks] = useState(initial);
     const[botonSumaActivo, setBotonSumaActivo] = useState(false);
     const[botonRestaActivo, setBotonRestaActivo] = useState(false);
+    const[itemStock, setItemStock] = useState(stock);
+
     
     function handleIncrement(){
         setClicks(clicks + 1);
-        setBotonRestaActivo(true)
-        {clicks < props.stock - 1 ? console.log('Agregado al carrito') : setBotonSumaActivo(true)} 
+        setItemStock(itemStock - 1);
+        setBotonRestaActivo(true);
+        {clicks < stock - 1 ? setItemStock(itemStock - 1) : setBotonSumaActivo(true)}
+        {clicks == 1 ? setItemStock(18) : console.log(itemStock)}
 }
     
     function handleDecrement(){
-        setClicks(clicks - 1)
-        setBotonSumaActivo(false)
-        {clicks > props.initial + 1 ? console.log('Quitado del carrito') : setBotonRestaActivo(false)}
+        setClicks(clicks - 1);
+        setItemStock(itemStock + 1);
+        setBotonSumaActivo(false);
+        {clicks > initial + 1 ? setItemStock(itemStock + 1) : setBotonRestaActivo(false)}
+        {clicks == 2 ? setItemStock(20) : console.log(itemStock)}
     }
 
     function resetConunter(){
@@ -26,8 +31,8 @@ function ItemCount(props){
         setBotonRestaActivo(false);
     }
 
-    function handleClicks (){
-        props.onAdd(clicks);
+    function handleClicks(){
+        onAdd(clicks);
     }
 
     return(
@@ -38,7 +43,7 @@ function ItemCount(props){
         <button type="button" className="btn btn-outline-info m-1" onClick={ resetConunter }> Reset </button>
         </div>
         <div className="">
-        <button type="button" className="btn btn-outline-primary m-1" onClick={ handleClicks }> Agregar al carrito </button>
+        <button  type="button" className="btn btn-outline-primary m-1" onClick={ handleClicks }> Agregar al carrito </button>
         <button type="button" className="btn btn-outline-primary m-1"><i className="bi bi-cart4 me-1"></i><span className="badge bg-light text-primary">{clicks}</span></button>
         </div>
         </div>

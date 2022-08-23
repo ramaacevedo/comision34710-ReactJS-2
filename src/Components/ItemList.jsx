@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
+import '../css/ItemList.css';
 
 function ItemList({id, name, price, imgurl, stock}){
     return(
-        <div className="divItems"> 
-            <div className="item-img">
+        <div className="ItemList"> 
+            <div className="ItemList-img">
             <img src={imgurl} alt="imagen" />
             </div>
-            <div className="item-info">
+            <div className="ItemList-info">
             <h2>{name}</h2>
             <h4>Precio: $ {price}</h4>
             <h5>Stock: {stock}</h5>

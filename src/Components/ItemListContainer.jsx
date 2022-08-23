@@ -1,4 +1,4 @@
-import '../App.css';
+import '../css/ItemListContainer.css';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Item from './Item';
@@ -12,7 +12,7 @@ function ItemListContainer() {
 
 function getProducts() {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(Item));
+        setTimeout(() => resolve(Item), 200);
     })
 };
 
@@ -29,7 +29,7 @@ function getProducts() {
 
 return (
     <>
-    <div className="d-flex justify-content-around">
+    <div className="ItemListContainer">
         {data.map((item) => {
             return (
                 <ItemList

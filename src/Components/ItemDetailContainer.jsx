@@ -1,4 +1,4 @@
-import '../App.css'
+import '../css/ItemDetailContainer.css'
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Item from './Item';
@@ -24,7 +24,7 @@ function getProducts() {
 
 return (
     <>
-    <div className="d-flex justify-content-around">
+    <div className="ItemDetailContainer">
             <ItemDetail
                 key={data.id}
                 id={data.id}
@@ -43,3 +43,5 @@ return (
 
 
 export default ItemDetailContainer;
+
+// d-flex justify-content-around

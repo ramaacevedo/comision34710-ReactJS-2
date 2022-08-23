@@ -5,7 +5,7 @@ function NavBar(){
     return(
     <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-            <Link className="navbar-brand" to="/">L O G O</Link>
+            <Link className="navbar-brand" to="/"><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,h_50/v1661202940/logo2_jutrai.png" alt="" /></Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
