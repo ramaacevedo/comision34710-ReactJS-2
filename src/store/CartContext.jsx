@@ -6,20 +6,19 @@ export function CartContext({children}){
     
     const [cart, setCart] = useState([]);
     let copyCart = [...cart];
-    
+
     function addItem(item, quantity){
         if(isInCart(item.id)){
             setCart(cart.map(foodAdd => {
             return foodAdd.id === item.id ? {...foodAdd, quantity: foodAdd.quantity + quantity} : foodAdd 
         }));
-
     } else {
         setCart([...cart, {...item, quantity: quantity}])
     }
     };
 
     function isInCart(id) {
-        cart.some(foodAdd => foodAdd.id === id);
+        return (cart.some((foodAdd) => foodAdd.id === id))
     };
 
     function totalPrice(){
