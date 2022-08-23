@@ -14,7 +14,7 @@ function ItemCount({ stock, initial, onAdd }){
         setItemStock(itemStock - 1);
         setBotonRestaActivo(true);
         {clicks < stock - 1 ? setItemStock(itemStock - 1) : setBotonSumaActivo(true)}
-        {clicks == 1 ? setItemStock(18) : console.log(itemStock)}
+        
 }
     
     function handleDecrement(){
@@ -22,7 +22,6 @@ function ItemCount({ stock, initial, onAdd }){
         setItemStock(itemStock + 1);
         setBotonSumaActivo(false);
         {clicks > initial + 1 ? setItemStock(itemStock + 1) : setBotonRestaActivo(false)}
-        {clicks == 2 ? setItemStock(20) : console.log(itemStock)}
     }
 
     function resetConunter(){
