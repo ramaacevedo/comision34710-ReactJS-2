@@ -3,26 +3,47 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Item from './Item';
 import ItemList from './ItemList';
+import database from '../database/firestore';
+import { getDocs, collection, query, where } from 'firebase/firestore';
 
 
 function ItemListContainer() {
     const [data, setData] = useState([]);
     const category = useParams().category;
 
-
 function getProducts() {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(Item), 200);
-    })
+        const foodCollection = collection(database, 'comida');
+        getDocs(foodCollection).then(docsSnapshot => {
+            const docsData = docsSnapshot.docs.map( doc => {
+                return {...doc.data(), id: doc.id};
+            });
+            resolve(docsData);
+        });
+    });
+};
+
+function getProductsCategory ( categoryParam ) {
+    return new Promise((resolve) => {
+        const foodCollection = collection(database, 'comida');
+        const q = query(foodCollection, where('category', '==', categoryParam))
+        getDocs(q).then(docsSnapshot => {
+            const docsData = docsSnapshot.docs.map( doc => {
+                return {...doc.data(), id: doc.id};
+            });
+            resolve(docsData);
+        });
+    });
 };
 
     useEffect(() => {
         getProducts().then(resp => {
-            let filtro = Item.filter ( (producto) => producto.category === category )
             if (category === undefined){
                 setData(resp);
             }else{
-                setData(filtro);
+                getProductsCategory(category).then((resp) => {
+                    setData(resp);
+                })
             }
         });
     }, [category]);
