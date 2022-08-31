@@ -20,9 +20,7 @@ function ItemList({id, name, price, imgurl, stock}){
                 </div>
             </div>
         )
-
     }
-
 };
 
 export default ItemList;
