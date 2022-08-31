@@ -2,16 +2,12 @@ import '../css/CartView.css'
 import { useContext } from "react";
 import { userContext } from "../store/CartContext";
 import CartItems  from './CartItems';
-import { Link } from 'react-router-dom';
+import UserForm from './UserForm';
+import { NavLink } from 'react-router-dom';
 
 function CartView(id){
 
-    const {cart, clearCart, removeItem, totalPrice} = useContext(userContext);
-
-    function terminarCompra(){
-        alert('compra finalizada');
-        clearCart();
-    }
+    const {cart, removeItem, totalPrice} = useContext(userContext);
 
     function removeItemCart() {
         removeItem(id)
@@ -21,8 +17,8 @@ function CartView(id){
         { cart.length === 0 ? ( 
                 
             <div className="noHayPedidos">
-                    <p>No hay ningun pedido en el carrito</p>
-                    <Link to='/'><p>Ir al menú</p></Link>
+                    <h5>No hay ningun pedido en el carrito</h5>
+                    <NavLink style={(isActive) => isActive ? {textDecoration: 'none'} : undefined} className="btn btn-outline-info m-1" to='/'>Ir al menú</NavLink>
             </div>
             ) : (
                 <>
@@ -43,8 +39,7 @@ function CartView(id){
                     <div className='precioTotal'>
                         <p>Subtotal: ${totalPrice()} + IVA</p>
                         <p>Total: ${totalPrice() * 1.21} FINAL</p>
-                        <button onClick={() => clearCart([])}>Vaciar carrito</button>
-                        <button onClick={() => terminarCompra([])}>Terminar mi compra</button>
+                        <UserForm cart={cart} />
                     </div>
                     </>
             )}

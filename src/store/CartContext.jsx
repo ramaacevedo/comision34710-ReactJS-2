@@ -1,4 +1,5 @@
 import { createContext, useState } from 'react';
+import swal from 'sweetalert';
 
 export const userContext = createContext([]);
 
@@ -40,11 +41,42 @@ export function CartContext({children}){
     }
 
     function clearCart(){
-        setCart([]);
+        swal({
+            title: "Se vaciará el Carrito",
+            text: "¿Desea continuar?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+            })
+            .then((willDelete) => {
+                if(`${totalQuantity()}` == 1){
+                    if (willDelete) {
+                        swal(`Se ha eliminado ${totalQuantity()} item del Carrito`, {
+                            icon: "success",
+                        });
+                        setCart([])
+                        } else {
+                        swal(`${totalQuantity()} items en el Carrito`);
+                        }
+                }else{
+                    if (willDelete) {
+                        swal(`Se han eliminado ${totalQuantity()} items del Carrito`, {
+                            icon: "success",
+                        });
+                        setCart([])
+                        } else {
+                        swal(`${totalQuantity()} items en el Carrito`);
+                        }
+                }
+            });
     };
 
+    function clearCartFinish(){
+        setCart([])
+    }
+
     return(
-    <userContext.Provider value={{cart, addItem, isInCart, totalPrice, totalQuantity, removeItem, clearCart}}>
+    <userContext.Provider value={{cart, addItem, isInCart, totalPrice, totalQuantity, removeItem, clearCart, clearCartFinish}}>
     {children}
     </userContext.Provider>
     )

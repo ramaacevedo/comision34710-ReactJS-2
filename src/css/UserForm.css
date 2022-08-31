@@ -1,0 +1,9 @@
+.form-container{
+    margin: 50px;
+    text-align: center;
+}
+
+label{
+    margin: 5px;
+    font-size: 20px;
+}

@@ -1,7 +1,6 @@
 import '../css/ItemDetailContainer.css'
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Item from './Item';
 import ItemDetail from './ItemDetail';
 import database from '../database/firestore';
 import { getDoc, doc, collection } from 'firebase/firestore';
@@ -22,7 +21,6 @@ function getProducts(){
         });
     });
 };
-
 
     useEffect(() => {
         getProducts().then((resp) => {

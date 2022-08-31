@@ -12,16 +12,16 @@ function NavBar(){
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">Inicio</Link>
+                <Link className="navbar-brand active" aria-current="page" to="/">Inicio</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link active" to={`category/para-1-persona`}>Comida para 1 persona</Link>
+                <Link className="navbar-brand active" to={`category/para-1-persona`}>Para 1 persona</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link active" to={`category/para-2-personas`}>Comida para 2 personas</Link>
+                <Link className="navbar-brand active" to={`category/para-2-personas`}>Para 2 personas</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link active" to={`category/para-3-personas`}>Comida para 3 personas</Link>
+                <Link className="navbar-brand active" to={`category/para-3-personas`}>Para 3 personas</Link>
                 </li>
             </ul>
             <CartWidget />

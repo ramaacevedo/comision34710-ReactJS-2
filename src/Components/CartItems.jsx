@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/CartItems.css'
 
 const CartItems = ({id, name, price, imgurl, quantity, removeItemCart}) => {
 
@@ -9,11 +10,11 @@ const CartItems = ({id, name, price, imgurl, quantity, removeItemCart}) => {
                     <img src={imgurl} />
                 </div>
                 <div className='CartItems'>
-                    <p>Producto: {name}</p>
-                    <p>Cantidad: {quantity}</p>
-                    <p>Precio: ${price} + IVA</p>
-                    <p>Subtotal: ${quantity * price} + IVA</p>
-                    <button onClick={() => removeItemCart(id)}>Borrar</button>
+                    <h3>{name}</h3>
+                    <h5>Cantidad: {quantity}</h5>
+                    <h5>Precio: ${price} + IVA</h5>
+                    <h5>Subtotal: ${quantity * price} + IVA</h5>
+                    <button onClick={() => removeItemCart(id)} className="btn btn-outline-info mt-3">Borrar</button>
                 </div>
                 </div>
             </>
