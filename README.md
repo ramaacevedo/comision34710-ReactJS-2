@@ -24,7 +24,7 @@ solicitar datos de los cliente, simular la compra de los productos y descontar e
 <p>3 - Una vez en el editor de texto, se debe instalar npm
 tipeando "npm install"</p>
 <p>4 - Una vez finalizado, ejecutar "npm start".</p>
-<p>Se abrirá una pestaña del navegador en el puerto 3000:</p>
+<p>Se abrirá una pestaña del navegador en el puerto 3000.</p>
 <p>Caso contrario se debe proceder manualmente, tipeando http://localhost:3000 en su navegador.</p>
 <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></h2>
 <hr><p><span style="margin-right: 30px;"></span><a href="https://github.com/ramaacevedo"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>
