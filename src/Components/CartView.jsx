@@ -15,7 +15,6 @@ function CartView(id){
     return(
         <>
         { cart.length === 0 ? ( 
-                
             <div className="noHayPedidos">
                     <h5>No hay ningun pedido en el carrito</h5>
                     <NavLink style={(isActive) => isActive ? {textDecoration: 'none'} : undefined} className="btn btn-outline-info m-1" to='/'>Ir al menú</NavLink>

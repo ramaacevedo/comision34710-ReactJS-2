@@ -1,7 +1,9 @@
 import '../css/ItemListContainer.css';
+import '../App.css';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
+import { DotPulse } from '@uiball/loaders'
 import database from '../database/firestore';
 import { getDocs, collection, query, where } from 'firebase/firestore';
 
@@ -12,26 +14,26 @@ function ItemListContainer() {
 
 function getProducts() {
     return new Promise((resolve) => {
-        const foodCollection = collection(database, 'comida');
-        getDocs(foodCollection).then(docsSnapshot => {
-            const docsData = docsSnapshot.docs.map( doc => {
-                return {...doc.data(), id: doc.id};
+            const foodCollection = collection(database, 'comida');
+            getDocs(foodCollection).then(docsSnapshot => {
+                const docsData = docsSnapshot.docs.map( doc => {
+                    return {...doc.data(), id: doc.id};
+                });
+                resolve(docsData);
             });
-            resolve(docsData);
-        });
     });
 };
 
 function getProductsCategory ( categoryParam ) {
     return new Promise((resolve) => {
-        const foodCollection = collection(database, 'comida');
-        const q = query(foodCollection, where('category', '==', categoryParam))
-        getDocs(q).then(docsSnapshot => {
-            const docsData = docsSnapshot.docs.map( doc => {
-                return {...doc.data(), id: doc.id};
+            const foodCollection = collection(database, 'comida');
+            const q = query(foodCollection, where('category', '==', categoryParam))
+            getDocs(q).then(docsSnapshot => {
+                const docsData = docsSnapshot.docs.map( doc => {
+                    return {...doc.data(), id: doc.id};
+                });
+                resolve(docsData);
             });
-            resolve(docsData);
-        });
     });
 };
 
@@ -49,7 +51,16 @@ function getProductsCategory ( categoryParam ) {
 
 return (
     <>
-    <div className="ItemListContainer">
+        {data.length === 0 ?
+        <div className='loader'>
+            <DotPulse 
+            size={80}
+            speed={1} 
+            color="black" 
+            />
+        </div>
+        :
+<div className="ItemListContainer">
         {data.map((item) => {
             return (
                 <ItemList
@@ -66,6 +77,7 @@ return (
                 
             })}
     </div>
+    }
     </>
 );
 };

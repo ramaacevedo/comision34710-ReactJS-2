@@ -1,70 +1,32 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comidas rápidas</font></font></h1>
+<hr><p>Proyecto de comida rápida</p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Información general</font></font></h2>
+<hr><ul>
+<li>Proyecto Final para el curso de ReactJS de Coder House (2022).
+Se trata de un E-commerce de comida rápida, la aplicación permite conectarse con una base de datos de Firebase.
+Permite seleccionar ciertos productos, visualizar los detalles de los mismos, agregarlos al carrito,
+solicitar datos de los cliente, simular la compra de los productos y descontar el stock en la base de datos. Solicita llenar un formulario con los datos del comprador y luego de confirmar. Una vez finalizada la compra, se genera un id de orden de compra en firebase donde se guarda con los datos del cliente y los productos que compró.</li>
+</ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tecnologías utilizadas</font></font></h2>
+<hr><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CSS</font></font></li>
+</ul><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reaccionar</font></font></li>
+</ul><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reaccionar</font></font></li>
+</ul><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reaccionar</font></font></li>
+</ul><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">F</font></font></li>
+</ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">capturas de pantalla</font></font></h2>
+<hr><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588727/Sin_t%C3%ADtulo2_ekmqq0.png" alt=""></p><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588726/Sin_t%C3%ADtulo_daetch.png" alt=""></p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Configuración</font></font></h2>
+<hr><p>Para descargar el proyecto pueden descargar el repositorio en formato comprimido.</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 - Ir a "Código" -&gt; "Descargar Zip"</font></font></p>
+<p>2 - Descomprimir el archivo</p>
+<p>3 - Una vez en el editor de texto, se debe instalar npm
+tipeando "npm install"</p>
+<p>4 - Una vez finalizado, ejecutar "npm start".</p>
+<p>Se abrirá una pestaña del navegador en el puerto 3000:</p>
+<p>Caso contrario se debe proceder manualmente, tipeando http://localhost:3000 en su navegador.</p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reconocimiento</font></font></h2>
+<hr><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">METRO</font></font></li>
+</ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></h2>
+<hr><p><span style="margin-right: 30px;"></span><a href="https://github.com/ramaacevedo"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>
