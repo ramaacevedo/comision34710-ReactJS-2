@@ -11,13 +11,13 @@ solicitar datos de los cliente, simular la compra de los productos y descontar e
 </ul><ul>gi
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CSS</font></font></li>
 </ul><ul>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,w_40/v1662590772/js_inta0q.png" alt="">JavaScript</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JavaScript</font></font></li>
 </ul><ul>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ReactJs</font></font></li>
 </ul><ul>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Firebase</font></font></li>
 </ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">capturas de pantalla</font></font></h2>
-<hr><p></p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Configuración</font></font></h2>
+<hr><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588727/Sin_t%C3%ADtulo2_ekmqq0.png" alt=""></p><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588726/Sin_t%C3%ADtulo_daetch.png" alt=""></p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Configuración</font></font></h2>
 <hr><p>Para descargar el proyecto pueden descargar el repositorio en formato comprimido.</p>
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 - Ir a "Código" -&gt; "Descargar Zip"</font></font></p>
 <p>2 - Descomprimir el archivo</p>
