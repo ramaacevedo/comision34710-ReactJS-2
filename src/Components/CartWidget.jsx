@@ -19,6 +19,6 @@ function CartWidget(){
     </Link>
     </div>
     )
-}
+};
 
 export default CartWidget;

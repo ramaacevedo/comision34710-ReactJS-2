@@ -3,10 +3,9 @@ import '../App.css';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
-import { DotPulse } from '@uiball/loaders'
+import { DotPulse } from '@uiball/loaders';
 import database from '../database/firestore';
 import { getDocs, collection, query, where } from 'firebase/firestore';
-
 
 function ItemListContainer() {
     const [data, setData] = useState([]);
@@ -81,6 +80,5 @@ return (
     </>
 );
 };
-
 
 export default ItemListContainer;

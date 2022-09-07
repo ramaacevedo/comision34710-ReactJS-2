@@ -7,15 +7,15 @@ Permite seleccionar ciertos productos, visualizar los detalles de los mismos, ag
 solicitar datos de los cliente, simular la compra de los productos y descontar el stock en la base de datos. Solicita llenar un formulario con los datos del comprador y luego de confirmar. Una vez finalizada la compra, se genera un id de orden de compra en firebase donde se guarda con los datos del cliente y los productos que compró.</li>
 </ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tecnologías utilizadas</font></font></h2>
 <hr><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTML</font></font></li>
+</ul><ul>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CSS</font></font></li>
 </ul><ul>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reaccionar</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JavaScript</font></font></li>
 </ul><ul>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reaccionar</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ReactJs</font></font></li>
 </ul><ul>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reaccionar</font></font></li>
-</ul><ul>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">F</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Firebase</font></font></li>
 </ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">capturas de pantalla</font></font></h2>
 <hr><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588727/Sin_t%C3%ADtulo2_ekmqq0.png" alt=""></p><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588726/Sin_t%C3%ADtulo_daetch.png" alt=""></p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Configuración</font></font></h2>
 <hr><p>Para descargar el proyecto pueden descargar el repositorio en formato comprimido.</p>
@@ -26,7 +26,5 @@ tipeando "npm install"</p>
 <p>4 - Una vez finalizado, ejecutar "npm start".</p>
 <p>Se abrirá una pestaña del navegador en el puerto 3000:</p>
 <p>Caso contrario se debe proceder manualmente, tipeando http://localhost:3000 en su navegador.</p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reconocimiento</font></font></h2>
-<hr><ul>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">METRO</font></font></li>
-</ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></h2>
+<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></h2>
 <hr><p><span style="margin-right: 30px;"></span><a href="https://github.com/ramaacevedo"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>

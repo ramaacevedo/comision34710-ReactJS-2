@@ -1,4 +1,4 @@
-import '../css/CartView.css'
+import '../css/CartView.css';
 import { useContext } from "react";
 import { userContext } from "../store/CartContext";
 import CartItems  from './CartItems';
@@ -44,6 +44,6 @@ function CartView(id){
             )}
             </>
     )
-}
+};
 
 export default CartView;

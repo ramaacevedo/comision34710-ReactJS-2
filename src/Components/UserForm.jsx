@@ -110,6 +110,6 @@ function UserForm({}) {
             </form>
         </div>
     );
-}
+};
 
 export default UserForm;

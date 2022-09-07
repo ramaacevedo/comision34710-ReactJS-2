@@ -1,20 +1,18 @@
 import { useState, useContext } from 'react';
 import { userContext } from '../store/CartContext';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 import ItemCount from './ItemCount';
 
 
 function ItemDetail({id, name, price, imgurl, stock}){
     
     const[quantityToAdd, setQuantityToAdd] = useState(0);
-
     const {addItem} = useContext(userContext);
 
     function handelAdd(quantity){
         addItem({id, name, price, imgurl, stock}, quantity)
         setQuantityToAdd(quantity);
-    }
-
+    };
 
     return(
         <div> 

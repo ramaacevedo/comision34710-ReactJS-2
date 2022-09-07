@@ -3,7 +3,6 @@ import '../css/ItemList.css';
 
 function ItemList({id, name, price, imgurl, stock}){
     
-    
     if(stock == 0){
         console.log(`${name} sin stock`);
     }else{

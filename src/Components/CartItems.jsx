@@ -1,5 +1,5 @@
-import React from 'react'
-import '../css/CartItems.css'
+import React from 'react';
+import '../css/CartItems.css';
 
 const CartItems = ({id, name, price, imgurl, quantity, removeItemCart}) => {
 
@@ -19,6 +19,6 @@ const CartItems = ({id, name, price, imgurl, quantity, removeItemCart}) => {
                 </div>
             </>
     )
-}
+};
 
 export default CartItems;
