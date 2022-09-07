@@ -19,7 +19,7 @@ solicitar datos de los cliente, simular la compra de los productos y descontar e
 </ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Capturas de pantalla</font></font></h2>
 <hr><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588727/Sin_t%C3%ADtulo2_ekmqq0.png" alt=""></p><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588726/Sin_t%C3%ADtulo_daetch.png" alt=""></p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Configuración</font></font></h2>
 <hr><p>Para descargar el proyecto pueden descargar el repositorio en formato comprimido.</p>
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 - Ir a "Código" -&gt; "Descargar Zip"</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 - Clickear en el botón verde "Code" ubicado en la parte superior derecha y luego "Download ZIP"</font></font></p>
 <p>2 - Descomprimir el archivo</p>
 <p>3 - Una vez en el editor de texto, se debe instalar npm
 tipeando "npm install"</p>
