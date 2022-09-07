@@ -8,14 +8,14 @@ solicitar datos de los cliente, simular la compra de los productos y descontar e
 </ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tecnologías utilizadas</font></font></h2>
 <hr><ul>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,w_40/v1662590772/html_tvnzle.png"></font></font></li>
-</ul><ul>gi
+</ul><ul>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,w_40/v1662590772/css_jy47ul.png"></font></font></li>
 </ul><ul>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,w_40/v1662590772/js_inta0q.png"></font></font></li>
 </ul><ul>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,w_40/v1662590772/RN_z6vnxw.jpg"></font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,w_40/v1662591438/React_dngebz.png"></font></font></li>
 </ul><ul>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,w_40/v1662590772/logo-vertical_qatsqm.png"></font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,w_40/v1662591438/firebase_fpjbmg.png"></font></font></li>
 </ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">capturas de pantalla</font></font></h2>
 <hr><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588727/Sin_t%C3%ADtulo2_ekmqq0.png" alt=""></p><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588726/Sin_t%C3%ADtulo_daetch.png" alt=""></p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Configuración</font></font></h2>
 <hr><p>Para descargar el proyecto pueden descargar el repositorio en formato comprimido.</p>
