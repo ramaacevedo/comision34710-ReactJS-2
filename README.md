@@ -7,7 +7,7 @@ Permite seleccionar ciertos productos, visualizar los detalles de los mismos, ag
 solicitar datos de los cliente, simular la compra de los productos y descontar el stock en la base de datos. Solicita llenar un formulario con los datos del comprador y luego de confirmar. Una vez finalizada la compra, se genera un id de orden de compra en firebase donde se guarda con los datos del cliente y los productos que compró.</li>
 </ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tecnologías utilizadas</font></font></h2>
 <hr><ul>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTML</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i class="bi bi-filetype-html"></i></font></font></li>
 </ul><ul>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CSS</font></font></li>
 </ul><ul>
