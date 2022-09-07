@@ -1,5 +1,5 @@
 <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comida rápida</font></font></h1>
-<hr><p>Proyecto E-commerce de comida rápida</p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Información general</font></font></h2>
+<hr><p>Proyecto E-commerce de comida rápida <img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,w_60/v1662592758/Homero_bc7wss.png"></p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Información general</font></font></h2>
 <hr><ul>
 <li>Proyecto Final para el curso de ReactJS de Coder House (2022).
 Se trata de un E-commerce de comida rápida, la aplicación permite conectarse con una base de datos de Firebase.
@@ -24,7 +24,6 @@ solicitar datos de los cliente, simular la compra de los productos y descontar e
 <p>3 - Una vez en el editor de texto, se debe instalar npm
 tipeando "npm install"</p>
 <p>4 - Una vez finalizado, ejecutar "npm start".</p>
-<p>Se abrirá una pestaña del navegador en el puerto 3000.</p>
-<p>Caso contrario se debe proceder manualmente, tipeando http://localhost:3000 en su navegador.</p>
+<p>Se abrirá una pestaña del navegador en el puerto 3000, caso contrario, se debe proceder manualmente, tipeando http://localhost:3000 en su navegador.</p>
 <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></h2>
 <hr><p><span style="margin-right: 30px;"></span><a href="https://github.com/ramaacevedo"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>
