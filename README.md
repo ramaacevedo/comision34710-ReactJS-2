@@ -1,5 +1,5 @@
-<h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comidas rápidas</font></font></h1>
-<hr><p>Proyecto de comida rápida</p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Información general</font></font></h2>
+<h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comida rápida</font></font></h1>
+<hr><p>Proyecto E-commerce de comida rápida</p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Información general</font></font></h2>
 <hr><ul>
 <li>Proyecto Final para el curso de ReactJS de Coder House (2022).
 Se trata de un E-commerce de comida rápida, la aplicación permite conectarse con una base de datos de Firebase.
@@ -16,7 +16,7 @@ solicitar datos de los cliente, simular la compra de los productos y descontar e
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,w_40/v1662591438/React_dngebz.png"></font></font></li>
 </ul><ul>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/c_scale,w_40/v1662591438/firebase_fpjbmg.png"></font></font></li>
-</ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">capturas de pantalla</font></font></h2>
+</ul><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Capturas de pantalla</font></font></h2>
 <hr><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588727/Sin_t%C3%ADtulo2_ekmqq0.png" alt=""></p><p><img src="https://res.cloudinary.com/ramdestroyeer/image/upload/v1662588726/Sin_t%C3%ADtulo_daetch.png" alt=""></p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Configuración</font></font></h2>
 <hr><p>Para descargar el proyecto pueden descargar el repositorio en formato comprimido.</p>
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 - Ir a "Código" -&gt; "Descargar Zip"</font></font></p>
